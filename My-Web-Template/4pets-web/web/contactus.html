@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact Us</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<!--slider-->
+
+<!--map API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+	function initialize() {
+	  var mapProp = {
+		center:new google.maps.LatLng(24.928126, 67.033302),
+		zoom:15,
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!--light-box-->  
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
+	<script type="text/javascript">
+		$(function() {
+			$('.gallery a').lightBox();
+		});
+   </script>  
+</head>
+<body>
+<div class="header">
+	<div class="wrap">   
+	   <div class="header-top">	
+	        <div class="logo">
+				<a href="index.html"><img src="images/logo1.png" alt="" width="113" height="74"/></a>
+			</div>
+            <div style="float:right;">
+<form action="http://www.google.com/search" target="_blank"><font color="#0099CC">G</font><font color="#CC3300">o</font><font color="#FFCC00">o</font><font color="#0099CC">g</font><font color="#00CC00">l</font><font color="#CC3300">e</font><br>
+<input type="text" name="q" placeholder="Google Search"><input type="submit" value="Search"></form>
+</div>
+			<div class="phone">
+					
+			</div>
+			<div class="clear"></div> 
+	    </div>
+	</div>
+	<div class="header-bottom">
+	  <div class="wrap">	
+		<div id="cssmenu">
+			 <ul>
+			   <li class="active"><a href="index.html"><span>Home</span></a></li>	
+      	      <li class="has-sub"><a href="gallary.html"><span>Gallery</span></a></li> 		 
+		   <li class="has-sub"><a href="gallary.html"><span>nutrition tips</span></a></li> 
+			   <li class="has-sub"><a href="services.html"><span>Category</span></a>
+			      <ul>
+			         <li class="has-sub"><a href="services.html"><span>Companion dogs</span></a></li>
+			         <li class="has-sub"><a href="services.html"><span>Guard dogs</span></a></li>
+                     <li class="has-sub"><a href="hunting.html"><span>Hunting dogs</span></a></li>
+                      <li class="has-sub"><a href="services.html"><span>Working dogs</span></a></li>
+			         <li class="has-sub"><a href="services.html"><span>Pariah dogs </span></a></li>
+                     <li class="has-sub"><a href="services.html"><span>Sled dogs</span></a></li>
+			      </ul>
+			   </li>
+                <li class="has-sub"><a href="services.html"><span>Country</span></a>
+			      <ul>
+			         <li class="has-sub"><a href="services.html"><span>Companion dogs</span></a></li>
+			         <li class="has-sub"><a href="services.html"><span>Guard dogs</span></a></li>
+                     <li class="has-sub"><a href="services.html"><span>Hunting dogs</span></a></li>
+                      <li class="has-sub"><a href="services.html"><span>Working dogs</span></a></li>
+			         <li class="has-sub"><a href="services.html"><span>Pariah dogs </span></a></li>
+                     <li class="has-sub"><a href="services.html"><span>Sled dogs</span></a></li>
+			      </ul>
+			   </li>
+                 <li><a href="aboutus.html"><span>About</span></a></li>
+			   <li class="last"><a href="contactus.html"><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div> 
+	  </div>
+   </div>
+</div>
+	<!------ Slider ------------>
+  <!------End Slider ------------>
+ 	<div class="main">
+ 	<div class="top-box">
+	  <div class="wrap">
+		 <div class="content-top">
+			 <div class="intro">
+                <div style="width:40%; float: left;">
+                    <h2 class="title">Contact</h2>
+                    <h3 class="subtitle">Adress: SD 1, Block A, Near Metric Board Office, North Nazimabad, Karachi</h3>
+                    <h3 class="subtitle">Phone: (21) 36630102-3, 36633472 </h3>
+                    <h3 class="subtitle">Email: info-nn@aptech-education.com.pk </h3>
+                </div>
+                <div style="width:60%; float: left;">
+                	<div id="googleMap" style="width:700px;height:250px; margin: 0 auto;"></div>
+                </div>
+        	 </div>
+			 <form id="myForm" method="post" action="contact-post.html">
+					<div class="to">
+                     	<input type="text" name="username" class="text" placeholder="Name" required />
+					 	<input type="text" name="email" class="text" placeholder="Email" style="margin-left: 10px" required />
+					</div>
+					<div class="to">
+                     	<input type="text" class="text" name="website" placeholder="Your Website" required />
+					 	<input type="text" class="text" name="subject" placeholder="Subject" style="margin-left: 10px" required />
+					</div>
+					<div class="text">
+	                   <textarea value="Message:" name="message"  placeholder="Message"></textarea>
+	                </div>
+	                <div>
+	                    <input class="submit" type="submit" />
+	                </div>
+               </form>
+<!--               <div style="width:100%;">
+	               <div id="googleMap" style="width:650px;height:380px; margin: 0 auto;"></div>
+               </div>-->
+<!-- Do not change code! -->
+
+            </div>
+		</div>
+	</div>
+ </div>
+
+ </div>
+	<div class="footer">
+	   <div class="wrap">
+		 <div class="copy">
+			<p> © 2013 All rights Reserved | </p>
+		</div>
+		<ul class="follow_icon">
+		   <li><a href="#" style="opacity: 1;"><img src="images/fb.png" alt=""></a></li>
+		   <li><a href="#" style="opacity: 1;"><img src="images/tw.png" alt=""></a></li>
+		
+		   <li><a href="#" style="opacity: 1;"><img src="images/g+.png" alt=""></a></li>
+		</ul>
+		<div class="clear"></div> 
+	</div>
+	<div class="footer-bot">
+ 		<a href="#toTop" class="toTop">&uarr;</a>
+			<script type="text/javascript">
+				$('.toTop ').click(function(){
+					$("html, body").animate({ scrollTop: 0 }, 600);
+					return false;
+				});
+				$('.toBottom').click(function(){
+					$('html,body').animate({scrollTop: $(document).height()}, 600);
+					return false;
+				});
+			</script>
+	</div>
+	<div class="clear"></div>
+</div>
+</body>
+</html>
+
+    	
+    	
+            

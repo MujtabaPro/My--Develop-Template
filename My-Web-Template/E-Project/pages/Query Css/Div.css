@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#mainContainer {
+	width:80%;
+	height:800px;
+	
+	
+}
+
+
+#container {float:right;
+	margin-right:-230px;
+margin-top:-100px;
+	 width:60%;
+height:800px;
+background-color:#CCC;
+}
+
+#mainContainer1 {
+	opacity:0.7;
+	margin-left:100px;
+	width:40%;
+	height:800px;
+	
+	
+}
+
+/* CSS Document */
+

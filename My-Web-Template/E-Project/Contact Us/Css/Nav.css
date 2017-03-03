@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+#mainNav ul {
+	margin-top:-60px;
+	list-style:none;
+	float:right;
+	height:80px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	
+	
+
+}
+
+#mainNav ul li {
+	
+    background-color:#000;
+	border:1px solid white;
+	border-bottom-color:black;
+	border-top-color:black;
+	width:135.5px;
+	height:34px;
+	line-height:35px;
+	text-align:center;
+	float:right;
+	position:relative;
+	background:#FFF;
+	color:#F00;	
+}
+
+#mainNav ul li a {
+	text-decoration:none;
+	color:#000;
+	display:block;
+}
+
+#mainNav ul li a:hover {
+	background-color:#F00;
+	color:#FFF;
+	opacity:0.7;
+	
+}
+
+#mainNav ul ul {
+	border-color:#FFF;
+	padding:0px;
+		margin:0px;
+		position:absolute;
+		display:none;
+		background:#999;
+}
+
+#mainNav ul li:hover > ul {
+	display:block;
+	
+}
+ 
+
+
+
+/* CSS Document */
+
